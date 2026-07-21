@@ -25,30 +25,9 @@ button{width:100%;margin-top:16px;border:0;padding:15px;border-radius:10px;backg
 @media(max-width:900px){.wrap{grid-template-columns:1fr}h1{font-size:46px}}
 </style>
 </head>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDqZRAYxtGZVSpz4UAjN6c2Nf0TpWkk8WE",
-    authDomain: "formfillco.firebaseapp.com",
-    projectId: "formfillco",
-    storageBucket: "formfillco.firebasestorage.app",
-    messagingSenderId: "712437210370",
-    appId: "1:712437210370:web:fd25e6bd54d480d715b61b",
-    measurementId: "G-GFX3G78CPY"
-  };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-  
+
 <body>
 <div class="wrap">
 <div>
@@ -67,32 +46,32 @@ button{width:100%;margin-top:16px;border:0;padding:15px;border-radius:10px;backg
 <div class="grid">
 <div>
 <label>Full Name *</label>
-<input type="text" required>
+<input type="text" name="name" required>
 </div>
 
 <div>
 <label>Email *</label>
-<input type="email" required>
+<input type="email" name="email" required>
 </div>
 
 <div>
 <label>WhatsApp Number *</label>
-<input type="tel" required>
+<input type="tel" name="whatsapp" required>
 </div>
 
 <div>
 <label>Brand / Company *</label>
-<input type="text" required>
+<input type="text" name="company" required>
 </div>
 
 <div class="full">
 <label>Website / Product link *</label>
-<input type="url" required>
+<input type="url" name="website" required>
 </div>
 
 <div class="full">
 <label>Pricing Plan</label>
-<select required>
+<select name="plan" required>
 <option value="">Select Plan</option>
 <option>Basic</option>
 <option>Standard</option>
@@ -102,7 +81,7 @@ button{width:100%;margin-top:16px;border:0;padding:15px;border-radius:10px;backg
 
 <div class="full">
 <label>Solve: 3 + 5</label>
-<input type="number" required id="captcha">
+<input type="number" name="captcha" required id="captcha">
 </div>
 
 </div>
